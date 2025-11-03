@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginTest {
 
-    static Logger logger = Logger.getLogger(LoginTest.class);
+    static Logger logger = LogManager.getLogger(LoginTest.class);
 
     public static void logs(){
 
