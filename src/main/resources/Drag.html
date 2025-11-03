@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jodhamal Drag and Drop Demo</title>
+    <link rel="stylesheet" href="drag.css">
+</head>
+<body>
+<div class="container">
+    <h1>Drag and Drop Demo</h1>
+
+    <div class="drag_area">
+        <h3>Available Students</h3>
+        <div id="student1" class="draggable" draggable="true" name="student_card">Alice</div>
+        <div id="student2" class="draggable" draggable="true" name="student_card">Bob</div>
+        <div id="student3" class="draggable" draggable="true" name="student_card">Charlie</div>
+    </div>
+
+    <div class="drop_area" id="selected_students" name="drop_area">
+        <h3>Selected Students</h3>
+    </div>
+</div>
+
+<script src="drag.js"></script>
+</body>
+</html>

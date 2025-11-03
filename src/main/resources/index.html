@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jodhamal Public School - Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" id="main_container">
+
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Jodhamal_Public_School_logo.png" alt="Jodhamal Public School Logo" class="school_logo">
+        <h1 class="school_name">Jodhamal Public School</h1>
+    </header>
+
+    <div class="form_container" id="form_container">
+
+        <!-- Selection Screen -->
+        <div class="choice_screen" id="choice_screen">
+            <h2>Welcome to Student Portal</h2>
+            <p>Are you a returning student or a new entrant?</p>
+            <div class="button_group">
+                <button id="login_choice_btn" class="btn">Login</button>
+                <button id="signup_choice_btn" class="btn btn_outline">Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login_form" class="form hidden">
+            <h2>Student Login</h2>
+
+            <label for="login_email">Email</label>
+            <input type="email" id="login_email" name="login_email" placeholder="Enter your email" required>
+
+            <label for="login_password">Password</label>
+            <input type="password" id="login_password" name="login_password" placeholder="Enter your password" required>
+
+            <button type="submit" id="login_submit_btn" class="btn">Login</button>
+            <p class="switch_text">New here? <a href="#login_form" id="switch_to_signup">Create an account</a></p>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signup_form" class="form hidden">
+            <h2>Student Registration</h2>
+
+            <label for="student_name">Full Name</label>
+            <input type="text" id="student_name" name="student_name" placeholder="Enter your full name" required>
+
+            <label for="student_emails">Email</label>
+            <input type="email" id="student_emails" name="student_email" placeholder="Enter your email" required>
+
+            <label for="student_contact">Contact Number</label>
+            <input type="tel" id="student_contact" class="contact" name="student_contact" placeholder="10-digit contact number" required>
+
+            <label for="student_class">Class / Grade</label>
+            <select id="student_class" name="student_class" required>
+                <option value="">Select Class</option>
+                <option value="Nursery">Nursery</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+                <option value="8th">8th</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+                <option value="11th">11th</option>
+                <option value="12th">12th</option>
+            </select>
+
+            <label for="student_password">Set Password</label>
+            <input type="password" id="student_password" name="student_passwords" placeholder="At least 8 chars, 1 uppercase, 1 number" required>
+
+            <button type="submit" id="signup_submit_btn" class="btn">Create Account</button>
+            <p class="switch_text">Already have an account? <a href="#" id="switch_to_login">Login</a></p>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Jodhamal Public School | Designed for Students</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
