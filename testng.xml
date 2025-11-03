@@ -30,7 +30,7 @@
 
     <test name="You Tube - yahoo">
         <parameter name="browser" value="yahoo"/>
-        <parameter name="expectedTitle" value="Google"/>
+        <parameter name="expectedTitle" value="YouTube"/>
         <parameter name="url" value="https://www.youtube.com"/>
         <classes>
             <class name="org.tests.testNg2"/>
@@ -39,7 +39,7 @@
 
     <test name="Google Test - edge">
         <parameter name="browser" value="firefox"/>
-        <parameter name="expectedTitle" value="YouTube"/>
+        <parameter name="expectedTitle" value="Google"/>
         <parameter name="url" value="https://www.google.com"/>
         <classes>
             <class name="org.tests.testNg2"/>
